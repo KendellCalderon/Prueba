@@ -92,11 +92,13 @@ class Bebida():
         E: Sí mismo
         S: El informe de los atributos
         """
-        return [self.codigo, self.nombre, self.ingredientes, self.precio, self.tamano]
+        return [self.codigo, self.nombre,
+                self.ingredientes, self.precio, self.tamano]
+
 
 class Fria(Bebida):
 
-    def __init__(self, codigo, nombre,ingredientes, precio, tamano):
+    def __init__(self, codigo, nombre, ingredientes, precio, tamano):
         Bebida.__init__(self, codigo, nombre, ingredientes, precio, tamano)
         self.hielo = False
         self.categoria = False
