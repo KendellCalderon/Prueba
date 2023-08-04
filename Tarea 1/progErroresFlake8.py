@@ -15,17 +15,13 @@ class Bebida():
     def establecerCodigo(self, nuevoCodigo):
         """
         F: Cambia el valor del atributo codigo
-        E: Nuevo valor para el atributo
-        S: Se cambia el valor del atributo
         """
         self.codigo = nuevoCodigo
         return
 
     def retornarCodigo(self):
         """
-        F: Retorna el atributo codigo
-        E: Sí mismo
-        S: El atributo codigo
+        F: Retorna el atributo codigoflake8
         """
         return self.codigo
 
@@ -39,11 +35,7 @@ class Bebida():
         return
 
     def retornarNombre(self):
-        """
-        F: Retorna el atributo nombre
-        E: Sí mismo
-        S: El atributo nombre
-        """
+        """ F: Retorna el atributo nombre E: Sí mismo S: El atributo nombre """
         return self.nombre
 
     def establecerIngredientes(self, nuevosIngredientes):
@@ -92,8 +84,8 @@ class Bebida():
         E: Sí mismo
         S: El informe de los atributos
         """
-        return [self.codigo, self.nombre,
-                self.ingredientes, self.precio, self.tamano]
+        return [self.codigo, self.nombre, self.ingredientes,
+                self.precio, self.tamano]
 
 
 class Fria(Bebida):
